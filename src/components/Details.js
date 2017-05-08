@@ -10,7 +10,7 @@ export default class Details extends Component {
       <span class="details">
         {!!item.score && `${item.score} points, `}
 
-        {'by '}<a href={`user/${item.by}`}>{item.by}</a>
+        {'by '}<a href={`/user/${item.by}`}>{item.by}</a>
 
         {` | ${moment(item.time * 1000).fromNow()}`}
 
