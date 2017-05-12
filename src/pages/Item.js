@@ -1,6 +1,6 @@
 import * as api from '../lib/api';
 import Component, {Config} from 'metal-jsx';
-import layout from '../layout';
+import layout from '../Layout';
 import Main from '../components/Main';
 import {ComponentRegistry} from 'metal-component';
 import {default as ItemView} from '../components/Item';

@@ -1,6 +1,6 @@
 import Component, {Config} from 'metal-jsx';
 import {ComponentRegistry} from 'metal-component';
-import layout from '../layout';
+import layout from '../Layout';
 import Main from '../components/Main';
 import StoriesIndex from '../components/StoriesIndex';
 import * as api from '../lib/api';
