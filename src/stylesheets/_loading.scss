@@ -1,0 +1,34 @@
+$barOpacity: 0.2;
+
+body:before {
+  background: linear-gradient(
+    to right,
+    $accent,
+    rgba($accent, $barOpacity),
+    $accent,
+    rgba($accent, $barOpacity),
+    $accent);
+  content: '';
+  opacity: 0;
+  transition: opacity 0.4s ease-in 1s;
+  position: fixed;
+  top: 0;
+  width: 200vw;
+  height: 4px;
+
+  animation: 2s linear 0s infinite slide;
+}
+
+.senna-loading body:before {
+  opacity: 1;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0vw);
+  }
+
+  to {
+    transform: translateX(-100vw);
+  }
+}

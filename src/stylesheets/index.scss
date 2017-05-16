@@ -7,6 +7,8 @@ $theme: #F5DA55;
 $layoutWidth: 768px;
 $layoutPadding: 8px;
 
+@import "./loading.scss";
+
 %bordered {
   border: 0 dashed $accent;
   border-bottom-width: 2px;
